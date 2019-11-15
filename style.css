@@ -1,0 +1,56 @@
+body{
+  background-color: lightgrey;
+  margin: 0;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+a:hover{
+  color: white;
+  background-color: #eb6036;
+}
+main{
+  margin: auto;
+  width: 1250px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.tips img{
+  width: 100%
+}
+.tips{
+  position: relative;
+}
+.tips:hover img{
+  opacity: 0.2;
+}
+.over{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%,-50%);
+  transition: .5s ease;
+}
+.tips:hover .over {
+  opacity: 1;
+}
+
+.tekst{
+color: Black;
+font-size: 30px;
+text-align: center;
+}
